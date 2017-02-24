@@ -1,0 +1,9 @@
+<ion-view view-title="Escuelas de Combate">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="escuela in escuelas" href="#/app/tecnicas/{{escuela.nombre}}">
+        {{escuela.nombre}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

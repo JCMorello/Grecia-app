@@ -1,0 +1,21 @@
+<ion-view view-title="{{escuela}}">
+    <ion-content>
+    <h1>Lista de bendiciones de {{escuela}}</h1>
+        
+
+    <ion-list>
+        <div ng-repeat="tecnica in tecnicas | filter:{ escuelaB:escuela }">
+        <ion-item class="item-stable" ng-click="toggleGroup(tecnica)" ng-class="{active: isGroupShown(tecnica)}">
+            <i class="icon" ng-class="isGroupShown(tecnica) ? 'ion-minus' : 'ion-plus'"></i>
+            {{tecnica.nombreB}}
+            </ion-item>
+            <ion-item class="item-accordion" ng-show="isGroupShown(tecnica)">
+            {{tecnica.descB}} - {{tecnica.nombreB}}
+            </ion-item>
+        </div>
+    </ion-list>
+
+
+
+    </ion-content>
+</ion-view>

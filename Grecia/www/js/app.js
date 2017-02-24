@@ -41,14 +41,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.dados', {
+      url: '/dados',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/dados.html',
+          controller: 'dadosCtrl'
         }
       }
     })
+  
+  .state('app.scanner', {
+      url: '/scanner',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/scanner.html',
+          controller: 'scannerCtrl'
+        }
+      }
+    })
+  
     .state('app.dioses', {
       url: '/dioses',
       views: {
@@ -58,7 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+  
   .state('app.bendiciones', {
     url: '/bendiciones/:bendicionesNombre',
     views: {
@@ -67,7 +79,51 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'bendicionesCtrl'
       }
     }
-  });
+  })
+  
+  .state('app.escuelas', {
+      url: '/escuelas',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/escuelas.html',
+          controller: 'escuelasCtrl'
+        }
+      }
+    })
+  
+  .state('app.tecnicas', {
+    url: '/tecnicas/:tecnicasNombre',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tecnicas.html',
+        controller: 'tecnicasCtrl'
+      }
+    }
+  })
+  
+  .state('app.ventajas', {
+      url: '/ventajas',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ventajas.html',
+          controller: 'ventajasCtrl'
+        }
+      }
+    })
+  
+  .state('app.oraculo', {
+      url: '/oraculo',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/oraculo.html',
+          controller: 'oraculoCtrl'
+        }
+      }
+    })
+
+  
+  
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dioses');
 });

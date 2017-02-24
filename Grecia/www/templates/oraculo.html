@@ -1,0 +1,15 @@
+<ion-view view-title="Oraculo">
+    <ion-content>
+        <div class="card" ng-show="oraculoCard.show">
+            <div class="item item-divider">
+            El Oraculo ha hablado
+            </div>
+            <p>{{oraculo.donde}}</p>
+            <p>{{oraculo.quien}}</p>
+            <p>{{oraculo.como}}</p>
+        </div>
+        <button class="button button-block button-positive" ng-click="oraculo.preguntar()">
+        Consultar al oraculo
+        </button>
+    </ion-content>
+</ion-view>

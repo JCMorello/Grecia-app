@@ -1,0 +1,15 @@
+<ion-view view-title="Ventajas y Desventajas">
+  <ion-content>
+    <ion-list>
+      <div ng-repeat="ventaja in ventajas">
+        <ion-item class="item-stable" ng-click="toggleGroup(ventaja)"
+                  ng-class="{'item-balanced': ventaja.tipo == 'V', 'item-assertive': ventaja.tipo == 'D', active: isGroupShown(ventaja)}">
+            {{ventaja.nombre}} | {{ventaja.puntos}} puntos
+        </ion-item>
+            <ion-item class="item-accordion" ng-show="isGroupShown(ventaja)">
+            {{ventaja.desc}}
+            </ion-item>
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
