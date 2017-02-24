@@ -1,0 +1,21 @@
+<ion-view view-title="{{dios}}">
+    <ion-content>
+    <h1>Lista de bendiciones de {{dios}}</h1>
+        
+
+    <ion-list>
+        <div ng-repeat="bendicion in bendiciones | filter:{ diosB:dios }">
+        <ion-item class="item-stable" ng-click="toggleGroup(bendicion)" ng-class="{active: isGroupShown(bendicion)}">
+            <i class="icon" ng-class="isGroupShown(bendicion) ? 'ion-minus' : 'ion-plus'"></i>
+            {{bendicion.nombreB}}
+            </ion-item>
+            <ion-item class="item-accordion" ng-show="isGroupShown(bendicion)">
+            {{bendicion.descB}} - {{bendicion.nombreB}}
+            </ion-item>
+        </div>
+    </ion-list>
+
+
+
+    </ion-content>
+</ion-view>

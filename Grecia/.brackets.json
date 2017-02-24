@@ -1,0 +1,26 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-sanitize.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-resource.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular-ui/angular-ui-router.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic-angular.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic-angular.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic.bundle.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic.bundle.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-resource.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-sanitize.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/ionic.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/service-worker.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/gulpfile.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-animate.min.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/lib/ionic/js/angular/angular-animate.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/plugins/ionic-plugin-keyboard/www/browser/keyboard.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "C:/Users/TOTdesign 2/Desktop/Grecia/Grecia/www/js/services.js"
+    ]
+}
