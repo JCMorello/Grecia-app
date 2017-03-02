@@ -1,17 +1,30 @@
-<ion-view view-title="Ventajas y Desventajas">
+<ion-view view-title="Bendiciones">
     <ion-content>
-    <h1>Lista de ventajas</h1>
-        
-
+    <div class="dios_bendicion">
+        <img style="max-width: 200px;" src="img/{{dios}}.png">
+        <h1>{{dios}}</h1>
+    </div>
+    
     <ion-list>
         <div ng-repeat="bendicion in bendiciones | filter:{ diosB:dios }">
         <ion-item class="item-stable" ng-click="toggleGroup(bendicion)" ng-class="{active: isGroupShown(bendicion)}">
-            <i class="icon" ng-class="isGroupShown(bendicion) ? 'ion-minus' : 'ion-plus'"></i>
             {{bendicion.nombreB}}
             </ion-item>
-            <ion-item class="item-accordion" ng-show="isGroupShown(bendicion)">
-            {{bendicion.descB}} - {{bendicion.nombreB}}
+            <ion-item class="item-accordion item-accordion-bendiciones" ng-show="isGroupShown(bendicion)">
+                {{bendicion.descB}}
+                <p ng-if="bendicion.dificultadB"><strong>Dificultad:</strong> {{bendicion.dificultadB}}</p>
+                <p ng-if="bendicion.lanzamientoB"><strong>Lanzamiento:</strong> {{bendicion.lanzamientoB}}</p>
+                <p ng-if="bendicion.efectoB"><strong>Efecto:</strong> {{bendicion.efectoB}}</p>
+                <p ng-if="bendicion.o"><strong>o :</strong> {{bendicion.o}}</p>
+                <p ng-if="bendicion.oo"><strong>oo :</strong> {{bendicion.oo}}</p>
+                <p ng-if="bendicion.ooo"><strong>ooo :</strong> {{bendicion.ooo}}</p>
+                <p ng-if="bendicion.oooo"><strong>oooo :</strong> {{bendicion.oooo}}</p>
+                <p ng-if="bendicion.ooooo"><strong>ooooo :</strong> {{bendicion.ooooo}}</p>
+                <p ng-if="bendicion.oooooo"><strong>oooooo :</strong> {{bendicion.oooooo}}</p>
+                <p ng-if="bendicion.ooooooo"><strong>ooooooo :</strong> {{bendicion.ooooooo}}</p>
+                <p ng-if="bendicion.efectoB2">{{bendicion.efectoB2}}</p>
             </ion-item>
+            
         </div>
     </ion-list>
 

@@ -2,13 +2,16 @@
   <ion-content>
     <ion-list>
       <div ng-repeat="ventaja in ventajas">
-        <ion-item class="item-stable" ng-click="toggleGroup(ventaja)"
-                  ng-class="{'item-balanced': ventaja.tipo == 'V', 'item-assertive': ventaja.tipo == 'D', active: isGroupShown(ventaja)}">
+          
+        <ion-item class="item-stable item-ventajas" ng-click="toggleGroup(ventaja)"
+                  ng-class="{'green_gradient': ventaja.tipo == 'V', 'red_gradient': ventaja.tipo == 'D', active: isGroupShown(ventaja)}">
             {{ventaja.nombre}} | {{ventaja.puntos}} puntos
         </ion-item>
-            <ion-item class="item-accordion" ng-show="isGroupShown(ventaja)">
-            {{ventaja.desc}}
-            </ion-item>
+          
+        <ion-item class="item-accordion item-accordion-ventajas" ng-show="isGroupShown(ventaja)">
+            <div class="longDiv">{{ventaja.desc}}</div>
+        </ion-item>
+          
         </div>
     </ion-list>
   </ion-content>

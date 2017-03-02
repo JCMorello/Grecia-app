@@ -120,6 +120,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+  
+  .state('app.foto', {
+      url: '/foto',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/foto.html',
+          controller: 'fotoCtrl'
+        }
+      }
+    })
 
   
   
